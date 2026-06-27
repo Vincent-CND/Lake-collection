@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    ports:
+      - 3000:3000
+    container_name: backend
+    env_file:
+      - .env
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app/dev/
+    networks:
+      - app-net
+    # depends_on:
+    #   - db
+    # volumes:
+    #   - backend
+  
+volumes:
+  backend:
+
+networks:
+  app-net:  
