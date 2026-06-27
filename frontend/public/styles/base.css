@@ -1,0 +1,37 @@
+:root {
+  --background: #f4fafd;
+  --surface: #ffffff;
+  --primary: #006699;
+  --primary-dark: #004d80;
+  --text: #1f2937;
+  --muted: #617d98;
+  --border: #d6e4ef;
+  --accent: #1f8a70;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, "Segoe UI", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

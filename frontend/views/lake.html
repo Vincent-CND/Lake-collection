@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lake</title>
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">järvikokoelma</a>
+      <nav class="main-nav">
+        <a href="#helsinki">Helsinki</a>
+        <a href="#espoo">Espoo</a>
+        <a href="#vantaa">Vantaa</a>
+        <a href="/lakeForm">Lake</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <form class="lake-form" method="post">
+      <div class="form-header">
+        <p class="form-kicker">New destination</p>
+        <h2>Lake Information</h2>
+        <p>Add the basic details visitors need before choosing a lake.</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="city">City Name</label>
+          <input id="city" name="city" type="text" placeholder="Enter city name" autocomplete="address-level2" />
+        </div>
+
+        <div class="form-field">
+          <label for="area">City Area Name</label>
+          <input id="area" name="area" type="text" placeholder="Enter area name" autocomplete="address-line2" />
+        </div>
+
+        <div class="form-field form-field-wide">
+          <label for="lakeName">Lake Name</label>
+          <input id="lakeName" name="lakeName" type="text" placeholder="Enter lake name" autocomplete="off" />
+        </div>
+
+        <div class="form-field">
+          <label for="bbq">Is there a BBQ spot?</label>
+          <select id="bbq" name="bbq">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="parking">Is there parking?</label>
+          <select id="parking" name="parking">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Save lake</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
