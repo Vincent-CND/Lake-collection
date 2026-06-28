@@ -1,18 +1,41 @@
 .brand {
-  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--primary-dark);
+}
+
+.logo-mark {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  background: #e6f2ff;
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+  font-weight: 800;
 }
 
 .main-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  flex: 1;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-left: 1.5rem;
+  max-width: 760px;
 }
 
 .main-nav a {
   color: var(--primary);
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .main-nav a:hover {

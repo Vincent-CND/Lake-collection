@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import { backendDir,frontendDir, publicDir, viewsDir } from './utils/path.js';
 import land from './routes/landRoute.js';
-import lake from './routes/lakeRoute.js';
+import lake from './routes/locationRoute.js';
 import {error} from './controllers/errorHandling.js';
 
 dotenv.config()

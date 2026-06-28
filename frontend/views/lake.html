@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,18 +11,23 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="/">järvikokoelma</a>
+      <a class="brand" href="/">
+        <span class="logo-mark">LC</span>
+        <span>Lake Collection</span>
+      </a>
       <nav class="main-nav">
-        <a href="#helsinki">Helsinki</a>
-        <a href="#espoo">Espoo</a>
-        <a href="#vantaa">Vantaa</a>
-        <a href="/lakeForm">Lake</a>
+        <a href="/">Home</a>
+        <a href="#city">City</a>
+        <a href="#map">Map</a>
+        <a href="/lakeForm">Add Lake Location</a>
+        <a href="#login">Log In</a>
+        <a href="#about">About</a>
       </nav>
     </div>
   </header>
 
   <main class="page-content">
-    <form class="lake-form" method="post">
+    <form class="lake-form" method="post" action="/lakeFormUp">
       <div class="form-header">
         <p class="form-kicker">New destination</p>
         <h2>Lake Information</h2>
